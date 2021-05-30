@@ -1,12 +1,13 @@
 import React from 'react';
-import Posts from './components/Post'
+import DisplayAllPosts from './Components/DisplayAllPosts'
 
-function App() {
+const App = ( ) => {
   return (
-    <>
-      <Posts />
-    </>
+    <div>
+      <DisplayAllPosts />
+    </div>
   );
-}
+};
 
 export default App;
+

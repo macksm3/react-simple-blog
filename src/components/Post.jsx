@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Post = () => {
-    return (
-    <>
-    <section>
-    <h3>Post title will appear here</h3>
-    <p> Post contents will appear here</p>
-    <button>Edit</button>
-    <button>Delete</button>
-    </section>
+const Post = ({ title, content, editPost, id, deletePost }) => {
+  return (
+   <>
+      <section className="post-container">
+        <h3>{title}</h3>
+        <p> {content}</p>
+        <button onClick={() => editPost(id)}>Edit</button>
+        <button onClick={() => deletePost(id)}>Delete</button>
+      </section>
     </>
-    )
+  )
 }
 export default Post
